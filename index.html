@@ -468,6 +468,25 @@ const PHOTO_OVERRIDES = {
   "shakes:crunchie": "https://images.unsplash.com/photo-1653085315536?auto=format&fit=crop&w=800&q=80",
   "shakes:kit-kat": "https://images.unsplash.com/photo-1653085315536?auto=format&fit=crop&w=800&q=80"
 };
+
+  const FLAVOR_COLORS = [
+  ["mango", "#C9791A"], ["raspberry", "#9C1F30"], ["strawberry", "#A31E5C"],
+  ["rose", "#A3315F"], ["blueberry", "#3B4F9E"], ["black currant", "#5A3572"],
+  ["chocolate", "#6B4226"], ["choc chip", "#553318"], ["choc-o-bar", "#5E3A1F"],
+  ["ice brownie", "#4A2E1E"], ["brownie", "#4A2E1E"], ["vanilla choc", "#75552F"],
+  ["vanilla", "#A6863F"], ["oreo", "#2B2B2B"], ["cookies & cream", "#3B3B3B"],
+  ["kesar pista", "#4F7A46"], ["pista", "#4F7A46"], ["mint choc", "#357A5E"],
+  ["butter scotch", "#B8862F"], ["caramel", "#A66A26"], ["coconut", "#8A8168"],
+  ["ferrero", "#6B4226"], ["nutella", "#5E3A1F"], ["kaju anjir", "#9C6B33"],
+  ["kaju anjeer", "#9C6B33"], ["kit kat", "#9C1F30"], ["crunchie", "#A6772A"],
+  ["chikoo bounty", "#9C7440"], ["chikoo", "#9C7440"], ["tutty fruity", "#A3315F"],
+  ["bubble gum", "#A3315F"], ["paan", "#3F7A45"], ["afghan dry fruit", "#9C6B33"],
+  ["american dry fruit", "#9C6B33"], ["almond choc", "#6B4226"], ["mawa malai", "#A6863F"],
+  ["winter cream", "#3B6E8F"], ["rabdi", "#A6863F"], ["spcl. creamy heaven", "#8E2063"],
+  ["fruiticana", "#C9791A"], ["coke", "#9C1F30"], ["fanta", "#C9791A"], ["water", "#3B7E9E"],
+  ["shawarma", "#A6772A"], ["slush", "#3B7E9E"], ["kulfi", "#A6863F"],
+  ["float", "#9C1F30"], ["ice lolly", "#3B7E9E"], ["plain cone", "#9C6B33"]
+];
 function flavorColor(name){
   const low = name.toLowerCase();
   for(const [key, color] of FLAVOR_COLORS){ if(low.includes(key)) return color; }
