@@ -507,9 +507,7 @@ function thumbHTML(catId, name, icon){
     const bg = `linear-gradient(155deg, ${pastel(flavor,0.86)}, ${pastel(flavor,0.94)})`;
     style = ` style="--flavor-bg:${bg}; --flavor-fg:${flavor}; --flavor-border:${pastel(flavor,0.68)};"`;
   }
-  /* Try a real local photo first; if that 404s, fall back to the
-     temporary stock photo (if one exists for this item); if that
-     also fails, remove the <img> so the icon shows through. */
+  /* Try local photo first; if 404, fallback to stock URL; if that fails, fallback to icon */
   const onerrorAttr = stockSrc
     ? `this.onerror=function(){this.remove();};this.src='${stockSrc}';`
     : `this.remove();`;
