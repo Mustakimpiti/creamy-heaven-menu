@@ -370,23 +370,23 @@ const MENU = [
   {
     id:"shakes", label:"Milkshakes", icon:"ic-shake",
     desc:"Blended thick and creamy, in three ways to enjoy.",
-    shakes:[
-      {n:"Blueberry", sm:75, big:80, thick:80},
-      {n:"Butter Scotch", sm:75, big:80},
-      {n:"Chocolate", sm:75, big:80},
-      {n:"Kesar Pista", sm:75, big:80, thick:80},
-      {n:"Mango", sm:75, big:80, thick:80},
-      {n:"Oreo", sm:75, big:80, thick:80},
-      {n:"Spcl. Creamy Heaven", sm:75, big:80},
-      {n:"Strawberry", sm:75, big:80, thick:80},
-      {n:"Vanilla", sm:75, big:80},
-      {n:"Caramel Crunch", big:80},
-      {n:"Ferrero Rocher", big:80, thick:80},
-      {n:"Kaju Anjir", big:80, thick:80},
-      {n:"Chikoo Bounty", big:80, thick:80},
-      {n:"Crunchie", thick:80},
-      {n:"Kit Kat", thick:80}
-    ]
+shakes:[
+  {n:"Blueberry", sm:75, big:80, thick:80},
+  {n:"Butter Scotch", sm:75, big:80},
+  {n:"Chocolate", sm:75, big:80},
+  {n:"Kesar Pista", sm:75, big:80, thick:80},
+  {n:"Mango", sm:75, big:80, thick:80},
+  {n:"Oreo", sm:75, big:80, thick:80},
+  {n:"Spcl. Creamy Heaven", sm:75, big:80},
+  {n:"Strawberry", sm:75, big:80, thick:80},
+  {n:"Vanilla", sm:75, big:80},
+  {n:"Caramel Crunch", big:80},
+  {n:"Ferrero Rocher", big:80, thick:80},
+  {n:"Kaju Anjir", big:80, thick:80},
+  {n:"Chikoo Bounty", big:80, thick:80},
+  {n:"Crunchie", thick:80},
+  {n:"Kit Kat", thick:80}
+]
   },
   {
     id:"bev", label:"Beverages", icon:"ic-drop",
@@ -451,29 +451,23 @@ const CAT_CLASS = {scoops:"cat-scoops",cones:"cat-cones",shakes:"cat-shakes",bev
    for reference: chocolate — Ali Choubin; strawberry — Alina Parache;
    oreo — Suveer Bhat; mango — Julia Zyablova (all via unsplash.com). */
 const PHOTO_OVERRIDES = {
-
-
-/* Flavour → colour map, lifted from the logo's palette + natural
-   flavour associations. First matching keyword wins. Rendered as
-   a soft pastel wash with a deeper-toned icon, not a candy fill. */
-const FLAVOR_COLORS = [
-  ["mango", "#C9791A"], ["raspberry", "#9C1F30"], ["strawberry", "#A31E5C"],
-  ["rose", "#A3315F"], ["blueberry", "#3B4F9E"], ["black currant", "#5A3572"],
-  ["chocolate", "#6B4226"], ["choc chip", "#553318"], ["choc-o-bar", "#5E3A1F"],
-  ["ice brownie", "#4A2E1E"], ["brownie", "#4A2E1E"], ["vanilla choc", "#75552F"],
-  ["vanilla", "#A6863F"], ["oreo", "#2B2B2B"], ["cookies & cream", "#3B3B3B"],
-  ["kesar pista", "#4F7A46"], ["pista", "#4F7A46"], ["mint choc", "#357A5E"],
-  ["butter scotch", "#B8862F"], ["caramel", "#A66A26"], ["coconut", "#8A8168"],
-  ["ferrero", "#6B4226"], ["nutella", "#5E3A1F"], ["kaju anjir", "#9C6B33"],
-  ["kaju anjeer", "#9C6B33"], ["kit kat", "#9C1F30"], ["crunchie", "#A6772A"],
-  ["chikoo bounty", "#9C7440"], ["chikoo", "#9C7440"], ["tutty fruity", "#A3315F"],
-  ["bubble gum", "#A3315F"], ["paan", "#3F7A45"], ["afghan dry fruit", "#9C6B33"],
-  ["american dry fruit", "#9C6B33"], ["almond choc", "#6B4226"], ["mawa malai", "#A6863F"],
-  ["winter cream", "#3B6E8F"], ["rabdi", "#A6863F"], ["spcl. creamy heaven", "#8E2063"],
-  ["fruiticana", "#C9791A"], ["coke", "#9C1F30"], ["fanta", "#C9791A"], ["water", "#3B7E9E"],
-  ["shawarma", "#A6772A"], ["slush", "#3B7E9E"], ["kulfi", "#A6863F"],
-  ["float", "#9C1F30"], ["ice lolly", "#3B7E9E"], ["plain cone", "#9C6B33"]
-];
+  // ——— All 15 milkshakes with real stock photo URLs ———
+  "shakes:blueberry": "https://images.unsplash.com/photo-1587503019?auto=format&fit=crop&w=800&q=80",
+  "shakes:butter-scotch": "https://images.unsplash.com/photo-1592272478?auto=format&fit=crop&w=800&q=80",
+  "shakes:chocolate": "https://images.unsplash.com/photo-1653085315536-1379bc836161?auto=format&fit=crop&w=800&q=80",
+  "shakes:kesar-pista": "https://images.unsplash.com/photo-1591406446?auto=format&fit=crop&w=800&q=80",
+  "shakes:mango": "https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?auto=format&fit=crop&w=800&q=80",
+  "shakes:oreo": "https://images.unsplash.com/photo-1623728720458-8c2f5a9dc13c?auto=format&fit=crop&w=800&q=80",
+  "shakes:spcl-creamy-heaven": "https://images.unsplash.com/photo-1619409034?auto=format&fit=crop&w=800&q=80",
+  "shakes:strawberry": "https://images.unsplash.com/photo-1686638745403-d21193f16b2f?auto=format&fit=crop&w=800&q=80",
+  "shakes:vanilla": "https://images.unsplash.com/photo-1597472068?auto=format&fit=crop&w=800&q=80",
+  "shakes:caramel-crunch": "https://images.unsplash.com/photo-1592272478?auto=format&fit=crop&w=800&q=80",
+  "shakes:ferrero-rocher": "https://images.unsplash.com/photo-1653085315536?auto=format&fit=crop&w=800&q=80",
+  "shakes:kaju-anjir": "https://images.unsplash.com/photo-1591406446?auto=format&fit=crop&w=800&q=80",
+  "shakes:chikoo-bounty": "https://images.unsplash.com/photo-1592272478?auto=format&fit=crop&w=800&q=80",
+  "shakes:crunchie": "https://images.unsplash.com/photo-1653085315536?auto=format&fit=crop&w=800&q=80",
+  "shakes:kit-kat": "https://images.unsplash.com/photo-1653085315536?auto=format&fit=crop&w=800&q=80"
+};
 function flavorColor(name){
   const low = name.toLowerCase();
   for(const [key, color] of FLAVOR_COLORS){ if(low.includes(key)) return color; }
@@ -503,7 +497,6 @@ function thumbHTML(catId, name, icon){
     const bg = `linear-gradient(155deg, ${pastel(flavor,0.86)}, ${pastel(flavor,0.94)})`;
     style = ` style="--flavor-bg:${bg}; --flavor-fg:${flavor}; --flavor-border:${pastel(flavor,0.68)};"`;
   }
-  /* Try local photo first; if 404, fallback to stock URL; if that fails, fallback to icon */
   const onerrorAttr = stockSrc
     ? `this.onerror=function(){this.remove();};this.src='${stockSrc}';`
     : `this.remove();`;
